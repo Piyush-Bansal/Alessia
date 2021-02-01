@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #0d0d0d;
+  font-size: 62.5%;
+  color: #ffffff;
+}
+
+@font-face {
+  font-family: "Ortica";
+  src: url("/fonts/Ortica.woff");
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-Regular.woff");
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.monogram {
+  display: none;
+}
+
+H1 {
+  font-size: 6.4rem;
+  font-family: "Ortica", serif;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 112%;
+  letter-spacing: -0.02em;
+  margin-bottom: 64px;
+}
+
+.logo {
+  align-self: flex-end;
+}
+
+.wordmark {
+  width: auto;
+  height: 25.92px;
+}
+
+.container {
+  max-width: 1312px;
+  padding: 78px 64px 48px 84px;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+p {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.6rem;
+  line-height: 150%;
+  font-feature-settings: "pnum" on, "lnum" on, "ordn" on;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: min-content min-content;
+  column-gap: 24px;
+}
+
+.footer-text {
+  white-space: nowrap;
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: min-content min-content;
+  column-gap: 24px;
+  min-height: 32px;
+  align-self: center;
+  margin-top: 32px;
+}
+
+.button {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  transition: all 0.3s ease-out;
+}
+
+.button:hover {
+  color: rgb(196, 196, 179);
+}
+
+.button:active {
+  color: #bb9461;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.button-line {
+  height: 1px;
+  width: 100%;
+  background: white;
+}
